@@ -1,0 +1,76 @@
+body{
+    font-family: 'Century Gothic', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    background-color: #eac600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    gap: 20px;
+}
+
+.Links{
+    margin: 0;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.Links:hover {
+    color: #666;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.Perfil{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0;
+    transition: transform 0.3s ease;
+}
+
+.Perfil:hover {
+    transform: scale(1.1);
+}
+
+/* Garantir que a navbar seja sempre centralizada */
+nav {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 20px !important;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav {
+        gap: 15px;
+        padding: 0 10px;
+    }
+    
+    .Links {
+        font-size: 12px;
+        padding: 6px 8px;
+    }
+    
+    .Perfil {
+        width: 35px;
+        height: 35px;
+    }
+}

@@ -1,0 +1,46 @@
+body{
+    font-family: 'Century Gothic', sans-serif;
+}
+
+.cartao-container {
+  position: relative;
+  margin-top: 50px;
+}
+
+.Bola {
+  width: 118%;
+  margin-left: -30px;
+  margin-top: -80px;
+}
+
+.Cartao {
+  position: absolute; 
+  top: 32%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  width: 78%;
+  z-index: 2; 
+  box-shadow: 14px 14px 14px 4px rgba(1, 1, 1, 0.3);
+  border-radius: 15px;
+}
+
+.Seta {
+  width: 4%;
+  position: absolute;
+  top: -35px;
+  left: 20px;
+  z-index: 3; 
+}
+
+
+.titulo{
+    position: absolute;
+    color: black;
+    z-index: 4;
+    top: -35px;
+    left: 50%;
+    transform: translate(-50%);
+    font-weight: 500;
+    font-size: 14px;
+}
+

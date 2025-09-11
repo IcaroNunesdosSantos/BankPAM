@@ -1,0 +1,100 @@
+.loading-container {
+  min-height: 100vh;
+  background-color: #eac600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Century Gothic', sans-serif;
+  overflow: hidden;
+}
+
+.loading-content {
+  text-align: center;
+  color: #000000;
+}
+
+.logo-container {
+  margin-bottom: 50px;
+}
+
+.logo {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.logo-text {
+  color: #000000;
+}
+
+.logo-accent {
+  color: #000000;
+}
+
+.loading-bar {
+  width: 300px;
+  height: 6px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  overflow: hidden;
+  margin: 0 auto 20px;
+}
+
+.loading-progress {
+  height: 100%;
+  background: linear-gradient(90deg, #daea00 0%, #48ff00 100%);
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.loading-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.loading-text p {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.progress-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #000000;
+}
+
+/* Animação de pulso para o logo */
+.logo {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 3rem;
+    letter-spacing: 2px;
+  }
+  
+  .loading-bar {
+    width: 250px;
+  }
+  
+  .loading-text p {
+    font-size: 1rem;
+  }
+}
